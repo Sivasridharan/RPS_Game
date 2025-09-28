@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS_Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>User: <span id="user_score">0</span></h2>
+            <h2>Computer: <span id="computer_score">0</span></h2>
+        </div>
+        <h1>Stone Paper Scissor</h1>
+        <div class="play_ground">
+            <div class="start">
+                <button onclick="play_game()">START</button>
+            </div>
+            <div id="view">
+
+                <div class="play">
+                    <div>
+                        <img src="" id="user_select">
+                    </div>
+                    <h1>VS</h1>
+                    <div>
+                        <img src="" id="computer_select">
+                    </div>
+                </div>
+                <h2 id="view_result"></h2>
+                <div class="choose">
+                    <img onclick="image_select(0)" src="./img/rock img.jpg">
+                    <img onclick="image_select(1)" src="./img/paper img.jpg">
+                    <img onclick="image_select(2)" src="./img/scissor img.jpg">
+                </div>
+                <div class="buttons">
+                    <button onclick="backword()" class="back">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="user_win">
+            <h1>Congratulation ..!</h1>
+            <h3>You are the winner</h3>
+        </div>
+        <div id="User_lose">
+            <h1>Sorry..!</h1>
+            <h3>You lose the game</h3>
+        </div>
+        <center>
+            <button id="reset" onclick="reset_game()">Restart</button>
+        </center>
+
+    </div>
+</body>
+<script src="./script.js" defer></script>
+
+</html>
